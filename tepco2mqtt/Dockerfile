@@ -19,7 +19,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD 1
 ENV PUPPETEER_EXECUTABLE_PATH /usr/bin/chromium-browser
 
 RUN apk add --no-cache --virtual .buildtools npm make gcc g++ linux-headers udev git python3 && \
-    npm install -g pnpm && \
+    npm install -g pnpm@8 && \
     jq -n --arg commit $(eval git rev-parse --short HEAD) '$commit' > /app/.hash ; \
     echo "Installed Tepco2MQTT @ version $(cat /app/.hash)" && \
     cd /app && \
