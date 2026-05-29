@@ -5,7 +5,7 @@
   "version": "1.0.1",
   "license": "MIT",
   "author": "Aurimas Niekis <aurimas@niekis.lt>",
-  "homepage": "https://github.com/aurimasniekis/hassio-tepco2mqtt",
+  "homepage": "https://github.com/quadcube/hassio-tepco2mqtt",
   "contributors": [
     {
       "name": "Aurimas Niekis",
@@ -15,12 +15,12 @@
   ],
   "bugs": {
     "bugs": {
-      "url": "https://github.com/aurimasniekis/hassio-tepco2mqtt"
+      "url": "https://github.com/quadcube/hassio-tepco2mqtt"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aurimasniekis/hassio-tepco2mqtt.git"
+    "url": "git+https://github.com/quadcube/hassio-tepco2mqtt.git"
   },
   "scripts": {
     "start": "tsx src/bin/tepco2mqtt.ts",
