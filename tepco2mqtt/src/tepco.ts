@@ -171,7 +171,7 @@ export class Tepco {
 
     try {
       await page.goto('https://www.app.kurashi.tepco.co.jp/', {
-        waitUntil: 'networkidle0',
+        waitUntil: 'domcontentloaded',
         timeout: seconds(settings.get().browser.timeout),
       });
     } catch (e: unknown) {
@@ -213,8 +213,8 @@ export class Tepco {
         logger.debug('Waiting for login to complete', NS);
 
         await Promise.all([
-          await page.locator('button[name="action"]').click(),
-          await page.waitForNavigation({
+          page.locator('button[name="action"]').click(),
+          page.waitForNavigation({
             timeout: seconds(settings.get().browser.timeout),
           }),
         ]);
