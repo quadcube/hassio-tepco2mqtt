@@ -1,9 +1,9 @@
 {
   "name": "Tepco2MQTT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "tepco2mqtt",
   "description": "Tepco2MQTT is a Home Assistant add-on that automates data extraction from the TEPCO (Tokyo Electric Power Company) website using a headless Chromium browser. It seamlessly navigates the website, retrieves essential data, and publishes it to an MQTT broker, enabling easy integration with your Home Assistant setup.",
-  "url": "https://github.com/aurimasniekis/hassio-tepco2mqtt",
+  "url": "https://github.com/quadcube/hassio-tepco2mqtt",
   "startup": "application",
   "services": [
     "mqtt:need"
